@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { HashLink as Link } from 'react-router-hash-link'
 import { AppContext } from '../../context/AppContext'
 
 const ProjectCard = ({project}) => {
