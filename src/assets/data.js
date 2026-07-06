@@ -90,7 +90,7 @@ export const projects = [
     image: projectImg3,
     tech: ["React.js", "Tailwind CSS", "Framer Motion", "Markdown"],
     demo: "#",
-    code: "#",
+    code: "https://github.com/sagar065/portfolio-website.git",
   },
   
 ];
