@@ -72,7 +72,7 @@ export const projects = [
     description: "A full-Stack e-commerce shopping cart featuring real-time product management, secure checkout integration, and a responsive user interface.",
     image: projectImg1,
     tech: ["React.js", "Tailwind CSS", "Redux", "react-router-dom"],
-    demo: "#",
+    demo: "https://shooping-cart-cjsb.vercel.app/",
     code: "https://github.com/sagar065/shooping-cart.git",
   },
   {
