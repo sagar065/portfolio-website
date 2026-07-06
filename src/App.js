@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/common/NavBar';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import FotterSection from './components/common/FotterSection';
+import { AppContext } from './context/AppContext';
+import { useContext } from 'react';
+
+
+
+
+
+
 
 function App() {
+
+  const { theme } = useContext(AppContext)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`min-h-screen overflow-y-hidden
+    ${theme === "light" ? "bg-white" : "bg-richblack-900"}`}>
+      <NavBar />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+
+      <FotterSection/>
+
+      
     </div>
   );
 }
