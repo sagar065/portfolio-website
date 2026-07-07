@@ -2,10 +2,10 @@ import React from 'react'
 import TypewriterOne from '../TypewriterOne'
 import { motion } from 'framer-motion'
 import resume  from "../heroSection/sagar_singh.pdf"
-import { Link } from 'react-router-dom'
 import OrbitAnimation from '../heroSection/OrbitAnimation'
 import { useContext } from 'react'
 import { AppContext } from "../../context/AppContext"
+import { HashLink as Link } from 'react-router-hash-link'
 
 const HeroSection = () => {
 
@@ -47,16 +47,18 @@ const HeroSection = () => {
                 </button>
                 
                 <div className='flex space-x-4 mt-4'>
-                    <Link to="/Projects" 
-                        className={`px-6 py-3 rounded-lg font-medium transition duration-300
+                    <button className={`px-6 py-3 rounded-lg font-medium transition duration-300
                         ${theme === "light" ? "bg-purple/20 text-richblack-900 font-semibold border border-purple hover:bg-purple-700" : "border border-purple font-semibold text-pure-greys-25 hover:bg-purple-700"}`}>
-                        <button>View Work</button>
-                    </Link>
-                    <Link to="/Contact" 
-                        className={`px-6 py-3 rounded-lg font-medium transition duration-300
+                        <Link to="#Projects">View Work</Link>
+                    </button>
+                       
+                        
+                    <button className={`px-6 py-3 rounded-lg font-medium transition duration-300
                         ${theme === "light" ? "bg-purple/20 text-richblack-900 font-semibold border border-purple hover:bg-purple-700" : "border border-purple font-semibold text-pure-greys-25 hover:bg-purple-700"}`}>
-                        <button>Contact Me</button>
-                    </Link>
+                        <Link to="#Contact">Contact Me</Link>
+
+                    </button>
+
                 </div>
 
             </div>

@@ -3,8 +3,8 @@ import { FaBars } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
 import { HashLink as Link } from 'react-router-hash-link'
 import { image } from "../../assets/data"
-import { MdOutlineNightlight } from "react-icons/md";
-import { MdLightMode } from "react-icons/md";
+import { CiLight } from "react-icons/ci";
+import { MdOutlineDarkMode } from "react-icons/md"
 import { useContext } from 'react';
 import { AppContext } from '../../context/AppContext';
 
@@ -36,9 +36,15 @@ const NavBar = () => {
                     onClick={toggleTheme} 
                     className='text-2xl'
                     >
-                        {
-                            theme === "light" ? (<MdOutlineNightlight className='text-black/80 transition duration-300 hover:text-purple'/>) : (<MdLightMode className='text-pure-greys-25 transition duration-300 hover:text-purple'/>)
-                        }
+                        <div>
+                            {
+                                theme === "light" ? (
+                                    <CiLight className='text-black/80 transition duration-300 hover:text-purple'/>) 
+                                    : 
+                                    (<MdOutlineDarkMode className='text-pure-greys-25 transition duration-300 hover:text-purple'/>)
+                            }
+                        </div>
+                       
                     </button>
                 </div>
             </div>
