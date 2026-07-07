@@ -46,7 +46,7 @@ const ProjectCard = ({project}) => {
                         </a>
                     ) : 
                     (
-                        <a href = "#" className={`flex-1 text-center px-4 py-2 rounded-lg font-medium transition duration-300
+                        <a href = "#Home" className={`flex-1 text-center px-4 py-2 rounded-lg font-medium transition duration-300
                         target="_blank" rel="noopener noreferrer"
                             ${theme === "light" ? " text-richblack-900 bg-richblue-200 border border-purple hover:bg-richblue-400 " : " text-pure-greys-25 bg-richblack-500 hover:bg-richblack-700"}`}>
                             View Demo
