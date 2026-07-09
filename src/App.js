@@ -17,7 +17,7 @@ function App() {
   const { theme } = useContext(AppContext)
   
   return (
-    <div className={`min-h-screen overflow-y-hidden
+    <div className={`min-h-screen overflow-x-hidden
     ${theme === "light" ? "bg-white" : "bg-richblack-900"}`}>
       <NavBar />
       

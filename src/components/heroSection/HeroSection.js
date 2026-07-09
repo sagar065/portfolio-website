@@ -19,7 +19,7 @@ const HeroSection = () => {
     viewport={{once: true}}
     id="Home"
     className="min-h-fit lg:min-h-screen flex items-center pt-28 pb-16 lg:pt-20 lg:pb-15">
-    <div className='container mx-auto px-6 flex flex-col space-y-6 lg:flex-row lg:spce-x-1 lg:space-y-0 items-center justify-center lg:justify-between'>
+    <div className='w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-6 lg:flex-row lg:gap-16 items-center justify-center lg:justify-between'>
 
             {/* left side content */}
             <div className='w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2'>
