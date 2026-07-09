@@ -24,13 +24,13 @@ const HeroSection = () => {
             {/* left side content */}
             <div className='w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2 lg:flex-1 lg:shrink-0'>
                 
-                <h1 className={`text-4xl md:text-5xl font-bold mb-4 whitespace-nowrap lg:whitespace-nowrap
+                <h1 className={`text-4xl md:text-5xl font-bold mb-4 md:whitespace-nowrap
                 ${theme === "light" ? "text-richblack-900" : " text-pure-greys-25"}`}>
                     Hi, I'm
-                    <span className=' text-blue-500 whitespace-nowrap lg:whitespace-nowrap '> Sagar Singh </span>
+                    <span className=' text-blue-500 md:whitespace-nowrap '> Sagar Singh </span>
                 </h1>
                 
-                <div className={`text-2xl md:text-4xl font-semibold mb-6 whitespace-nowrap lg:whitespace-nowrap
+                <div className={`text-2xl md:text-4xl font-semibold mb-6 md:whitespace-nowrap
                 ${theme === "light" ? " text-richblack-900" : "text-pure-greys-25"}`}>
                     <TypewriterOne/>
                 </div>

@@ -10,6 +10,9 @@ module.exports = {
       "edu-sa": ["Edu SA Beginner", "cursive"],
     },
     extend: {
+      screens:{
+        "lg": "950px",
+      },
       colors: {
         purple: {
           DEFAULT:"#8B5CF6",
