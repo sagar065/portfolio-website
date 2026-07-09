@@ -18,7 +18,7 @@ const HeroSection = () => {
     transition={{duration:1, ease:"easeOut"}}
     viewport={{once: true}}
     id="Home"
-    className="min-h-[70vh] flex items-center pt-24 pb-8 md:pt-32 lg:pt-16 lg:pb-20">
+    className="min-h-[70vh] flex items-center pt-32 pb-8 lg:pt-16 lg:pb-20">
     <div className='w-full max-w-5xl mx-auto px-6 md:px-12 flex flex-col gap-6 lg:gap-12 lg:flex-row items-center lg:justify-center'>
 
             {/* left side content */}
