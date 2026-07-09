@@ -18,19 +18,19 @@ const HeroSection = () => {
     transition={{duration:1, ease:"easeOut"}}
     viewport={{once: true}}
     id="Home"
-    className="min-h-[70vh] flex items-center pt-20 pb-8 lg:pt-32 lg:pb-20">
-    <div className='w-full max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-6 lg:gap-8 lg:flex-row items-center justify-center lg:justify-start'>
+    className="min-h-[70vh] flex items-center pt-24 pb-8 md:pt-32 lg:pt-16 lg:pb-20">
+    <div className='w-full max-w-5xl mx-auto px-6 md:px-12 flex flex-col gap-6 lg:gap-12 lg:flex-row items-center lg:justify-center'>
 
             {/* left side content */}
-            <div className='w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2'>
+            <div className='w-full flex flex-col items-center lg:items-start text-center lg:text-left lg:w-1/2 lg:flex-1 lg:shrink-0'>
                 
-                <h1 className={`text-4xl md:text-5xl font-bold mb-4
+                <h1 className={`text-4xl md:text-5xl font-bold mb-4 whitespace-nowrap lg:whitespace-nowrap
                 ${theme === "light" ? "text-richblack-900" : " text-pure-greys-25"}`}>
                     Hi, I'm
-                    <span className=' text-blue-500 whitespace-nowrap '> Sagar Singh </span>
+                    <span className=' text-blue-500 whitespace-nowrap lg:whitespace-nowrap '> Sagar Singh </span>
                 </h1>
                 
-                <div className={`text-2xl md:text-4xl font-semibold mb-6
+                <div className={`text-2xl md:text-4xl font-semibold mb-6 whitespace-nowrap lg:whitespace-nowrap
                 ${theme === "light" ? " text-richblack-900" : "text-pure-greys-25"}`}>
                     <TypewriterOne/>
                 </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
             </div>
 
             {/* Right side image */}
-            <div className='w-full lg:w-1/2 flex justify-center mt-2 lg:mt-0'>
+            <div className='w-full lg:w-1/2 flex lg:flex-1 justify-center items-start mt-2 lg:mt-0'>
                 <OrbitAnimation/>
             </div>
     </div>
