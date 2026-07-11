@@ -80,8 +80,8 @@ export const projects = [
     description: "A full-stack learning management syastem(LMS) designed with student dashboards, instructor dashboards, and secure payment integration for premium courses.",
     image: projectImg2,
     tech: ["React.js", "Redux", "Tailwind CSS", "Express.js", "MongoDB"],
-    demo: "#",
-    code: "https://github.com/sagar065/studynotion-project.git",
+    demo: "https://edu-tech-rho-eight.vercel.app/",
+    code: "https://github.com/sagar065/Edu-tech.git",
   },
   
   {
